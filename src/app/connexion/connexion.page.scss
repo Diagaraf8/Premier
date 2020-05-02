@@ -1,0 +1,28 @@
+ion-content {
+    --ion-background-color: white;
+  }
+  .logo{
+    color: indigo;
+    height: 150px;
+    position: relative;
+  }
+  ion-icon {
+    color: indigo;
+    position: absolute;
+    font-size: 5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  ion-button{
+    color: indigo;
+  }
+  .padding ion-label{
+    color: indigo;
+  }
+  ion-title{
+    color: indigo;
+  }
+  ion-back-button{
+    color: indigo;
+  }

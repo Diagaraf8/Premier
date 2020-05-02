@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/homme.page"></ion-back-button>
+    </ion-buttons>
+    <ion-title >Inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="box">
+    <div class="logo">
+      <ion-img src="../assets/img/Tayer1.jpg"></ion-img>
+    </div>
+    <h2>Nouveau Compte</h2>
+  <br>
+
+  <span class="error" *ngIf="error" [@fallIn]= 'state'>{{ error }}</span>
+
+  <form #formData= 'ngForm' (ngSubmit)="onSubmit(formData)">
+
+    <ion-item class="inputBox" >
+      <ion-label position="floating">Nom complet</ion-label>
+      <ion-input type="text"  (ngModel)= "nom"></ion-input>
+    </ion-item>
+      <ion-item class="inputBox">
+        <ion-label position="floating">Numero de téléphone</ion-label>
+        <ion-input type="number"  (ngModel)= "telephone"></ion-input>
+    </ion-item>
+    <ion-item class="inputBox">
+      <ion-label position="floating"  (ngModel)= "email">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item class="inputBox">
+      <ion-label position="floating"  (ngModel)= "password">Mot de passe</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-button type="submit" [disabled]="!formData.valid" color="danger"  shape="round" expand="block">S'inscrire </ion-button>
+    </ion-item>
+</form>
+
+</div>
+
+</ion-content>

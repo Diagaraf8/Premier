@@ -1,0 +1,43 @@
+
+label{
+    color: indigo;
+}
+.ion-client{
+    --ion-background-color:  white;
+}
+.ion-padding{
+    padding: 100%;
+}
+.butt{
+    padding-top:70% ;
+    padding-left: 70%;
+}
+.box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: white;
+    
+    
+    
+}
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: indigo;
+    text-align: center;
+}
+.box ion-item {
+    background: transparent;
+    color: indigo;
+    border: none;
+    outline: none;
+}
+ion-button{
+    color: white;
+    background:  indigo;
+
+}

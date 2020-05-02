@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button color="purpish" defaultHref="/homme.page"></ion-back-button>
+      </ion-buttons>
+      <ion-title color="purpish">Connexion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <div class="logo">
+
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </div>
+    <div class="padding">
+   
+      <span class="error" *ngIf="error" >{{ error }}</span>
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input  type="text" [(ngModel)]= "email"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label  position="floating">Mot de passe</ion-label>
+          <ion-input type="password"  [(ngModel)]= "password"></ion-input>
+        </ion-item>
+    
+        <ion-item lines="none">
+          <ion-button fill="clear" slot="end" >Mot de pass oublié ?</ion-button>
+        </ion-item> 
+    
+        <ion-button routerLink="/tayeur" (click)="login()" id="email" color="reddish" fill="outline" shape="round" expand="block">CONNEXION</ion-button>
+      
+      <br>
+     
+    </div>
+  </ion-content>
+  
+  

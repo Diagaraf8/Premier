@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="purplish" defaultHref="/commande"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="purplish">Faites votre commande</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <div class="box">
+    <h2>Détails de la commande</h2>
+  <ion-item>
+    <ion-label position="floating">Nom de tissu</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">prix Unitaire</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Model</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+</div>
+
+<br>
+<div class="box1">
+  <h2>Détail de la livraison</h2>
+<ion-item>
+  <ion-label position="floating">Votre nom</ion-label>
+  <ion-input type="text"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Votre adresse</ion-label>
+  <ion-input type="text"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Numero de téléphone</ion-label>
+  <ion-input type="number"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">MM/DD/YYYY</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" min="2020-01-01" max="2030-12-09"></ion-datetime>
+</ion-item>
+
+
+</div>
+<ion-item>
+  <ion-button fill="outline" color="purplish" shape="round" expand="block">Soumettre </ion-button>
+</ion-item>
+</ion-content>

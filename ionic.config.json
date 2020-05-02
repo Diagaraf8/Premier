@@ -1,0 +1,7 @@
+{
+  "name": "deuxieme",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,16 @@
+ion-content {
+  --ion-background-color: white;
+}
+ion-item {
+  --ion-background-color: transparent!important;
+}
+.padding {
+  padding: 10%;
+  top: 10%;
+}
+ion-content ion-text{
+  color: indigo;
+}
+ion-content ion-button{
+  color: indigo;
+}
